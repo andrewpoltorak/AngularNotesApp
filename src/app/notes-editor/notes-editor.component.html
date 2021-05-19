@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <app-notes [section]="section"></app-notes>
+      </div>
+      <div class="col-md-4">
+        <app-sections [section]="section" (sectionChanged)="setSection($event)"></app-sections>
+      </div>
+    </div>
+</div>
